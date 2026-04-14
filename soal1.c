@@ -7,11 +7,12 @@ int main (){
     int mod2;
     int mod3;
     int count;
+    int i;
     scanf("%d", &N);
     mod2 = N%2;
     mod3 = N%3;
 
-    while (N>0)
+    while (i<1)
     {
         if (mod2==0 && mod3==0){
             printf("BIRU\n");
@@ -25,7 +26,7 @@ int main (){
         else{
             printf("%d", N);
         }
-
+        i++;
     }
     return 0;
 }
