@@ -12,7 +12,7 @@ int main (){
     mod2 = N%2;
     mod3 = N%3;
 
-    while (i<1)
+    for (i=0; i<N; i++)
     {
         if (mod2==0 && mod3==0){
             printf("BIRU\n");
@@ -26,7 +26,6 @@ int main (){
         else{
             printf("%d", N);
         }
-        i++;
     }
     return 0;
 }
