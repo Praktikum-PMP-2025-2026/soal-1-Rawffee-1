@@ -9,7 +9,7 @@ int main (){
     int i;
     int tingkat;
     scanf("%d", &N);
-    tingkat = 0;
+    tingkat = 1;
 
     for (i=0; i<N; i++){
         mod2 = tingkat%2;
