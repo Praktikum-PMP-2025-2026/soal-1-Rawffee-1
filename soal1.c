@@ -6,14 +6,14 @@ int main (){
     int N;
     int mod2;
     int mod3;
-    int count;
     int i;
+    int tingkat;
     scanf("%d", &N);
-    mod2 = N%2;
-    mod3 = N%3;
+    tingkat = 0;
 
-    for (i=0; i<N; i++)
-    {
+    for (i=0; i<N; i++){
+        mod2 = tingkat%2;
+        mod3 = tingkat%3;
         if (mod2==0 && mod3==0){
             printf("BIRU\n");
         }
@@ -24,8 +24,9 @@ int main (){
             printf("KUNING\n");
         }
         else{
-            printf("%d", N);
+            printf("%d\n", tingkat);
         }
+        tingkat++;
     }
     return 0;
 }
